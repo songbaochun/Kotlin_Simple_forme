@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/frame_loading_bg"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:background="@drawable/frame_dialog_loading_bg"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/frame_avi"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="30dp"
+        app:indicatorColor="#ffffff"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:layout_constraintBottom_toBottomOf="@id/frame_loading_bg"
+        app:layout_constraintEnd_toEndOf="@id/frame_loading_bg"
+        app:layout_constraintStart_toStartOf="@id/frame_loading_bg"
+        app:layout_constraintTop_toTopOf="@id/frame_loading_bg" />
+
+    <TextView
+        android:id="@+id/frame_tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/frame_loading"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/frame_avi"
+        app:layout_constraintStart_toStartOf="@id/frame_avi"
+        app:layout_constraintTop_toBottomOf="@id/frame_avi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

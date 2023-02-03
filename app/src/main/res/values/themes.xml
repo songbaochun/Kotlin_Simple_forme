@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.app" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/main_bg</item>
+        <item name="colorPrimaryDark">@color/main_bg</item>
+        <item name="colorAccent">@color/main_bg</item>
+        <item name="android:windowBackground">@color/main_bg</item>
+    </style>
+
+    <style name="SplashThemes" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">#333333</item>
+    </style>
+</resources>

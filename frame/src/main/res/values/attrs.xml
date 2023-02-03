@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressBarView">
+        <attr name="ringColor" format="color" />
+        <attr name="ringProgressColor" format="color" />
+        <attr name="ringProgressEndColor" format="color" />
+        <attr name="ringWidth" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="showTextProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="NewLuckView">
+        <!--奇数扇形的填充色-->
+        <attr name="luck_odd_sector_color" format="color"/>
+
+        <!--偶数扇形的填充色-->
+        <attr name="luck_even_sector_color" format="color"/>
+
+        <!--奖品图片的宽度占转盘直径的比-->
+        <attr name="luck_item_width_ratio" format="float"/>
+
+        <!--奖品图片的高度占转盘直径的比-->
+        <attr name="luck_item_height_ratio" format="float"/>
+
+        <!--奖品图片距离圆心的偏移长度占圆盘半径长度的比-->
+        <attr name="luck_item_offset_ratio" format="float"/>
+
+        <!--奖项字体大小-->
+        <attr name="luck_text_size" format="dimension" />
+
+        <!--奖项字体颜色-->
+        <attr name="luck_text_color" format="color" />
+
+        <!--奖品名称文字距离圆心的长度和半径之比-->
+        <attr name="luck_text_offset_ratio" format="float"/>
+
+        <!--indicator的宽度和转盘直径的比-->
+        <attr name="luck_indicator_width_ratio" format="float"/>
+
+        <!--indicator的高度和转盘直径的比-->
+        <attr name="luck_indicator_height_ratio" format="float"/>
+
+        <!--indicator的高度和转盘直径的比-->
+        <attr name="luck_indicator_drawable" format="reference"/>
+
+        <!--转一圈所需的时间-->
+        <attr name="luck_cycle_millis" format="integer"/>
+
+    </declare-styleable>
+
+
+    <!--圆角imageview-->
+    <declare-styleable name="RoundImageView">
+        <attr name="type" format="enum">
+            <enum name="circle" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+        <!--圆角方位-->
+        <attr name="round_type" format="enum">
+            <enum name="all" value="0" />
+            <enum name="top" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="left" value="3" />
+            <enum name="right" value="4" />
+
+            <enum name="top_left" value="5" />
+            <enum name="top_right" value="6" />
+            <enum name="bottom_left" value="7" />
+            <enum name="bottom_right" value="8" />
+        </attr>
+        <attr name="radian" format="dimension" />
+    </declare-styleable>
+</resources>
